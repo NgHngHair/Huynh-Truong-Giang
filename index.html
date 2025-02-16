@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Profile</title>
+    <style>
+        @keyframes neonGlow {
+            0% { text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff; }
+            50% { text-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff; }
+            100% { text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff; }
+        }
+        @keyframes borderNeonCycle {
+            0% { border-color: #00ffff; box-shadow: 0 0 10px #00ffff; }
+            25% { border-color: #ff00ff; box-shadow: 0 0 10px #ff00ff; }
+            50% { border-color: #ff9900; box-shadow: 0 0 10px #ff9900; }
+            75% { border-color: #00ff00; box-shadow: 0 0 10px #00ff00; }
+            100% { border-color: #00ffff; box-shadow: 0 0 10px #00ffff; }
+        }
+        body {
+            background: url('imagines/1.jpg') no-repeat center center fixed;
+            color: #fafad2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 28px;
+ text-shadow: 0 0 20px #00ffff, 0 0 35px #ff00ff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar {
+            width: 100px;
+            background: rgba(0, 255, 255, 0.2);
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            border: 4px solid #00ffff;
+            animation: borderNeonCycle 5s infinite alternate;
+        }
+        .left-sidebar {
+            left: 0;
+        }
+        .right-sidebar {
+            right: 0;
+        }
+        .navbar {
+            background: rgba(0, 255, 255, 0.5);
+            padding: 15px;
+            text-align: center;
+            border-bottom: 4px solid #00ffff;
+            box-shadow: 0 0 25px 8px #00ffff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            left: 0;
+            z-index: 1000;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .navbar a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #f0f8ff;
+            font-weight: bold;
+            text-shadow: 0 0 20px #00ffff, 0 0 35px #ff00ff;
+            animation: neonGlow 1.5s infinite alternate;
+            padding: 10px 20px;
+            border: 2px solid #00ffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00ffff;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            margin: 100px auto;
+            max-width: 900px;
+        }
+        .card {
+            background: rgba(0, 255, 255, 0.2);
+            border: 3px solid #00ffff;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px auto;
+            width: 80%;
+            max-width: 650px;
+            box-shadow: 0 0 25px 8px #00ffff;
+            font-weight: bold;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 65px;
+            color: #FFD700;
+            text-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700;
+            border: 4px solid #FFD700;
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px 8px #FFD700;
+        }
+        h2 {
+            color: #e0ffff;
+            font-size: 50px;
+            text-shadow: 0 0 10px #9400D3;
+        }
+        audio {
+            display: none;
+        }
+        .footer {
+            margin-top: 50px;
+            padding: 50px;
+            width: 100vw;
+            background: rgba(0, 255, 255, 0.2);
+            border-top: 3px solid #00ffff;
+            box-shadow: 0 0 25px 8px #00ffff;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .footer a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar left-sidebar"></div>
+    <div class="sidebar right-sidebar"></div>
+    <div class="content">
+        <div class="navbar">
+            <a href="#ten">Tên</a>
+            <a href="#so-thich">Sở Thích</a>
+            <a href="#mon-hoc">Môn Học Yêu Thích</a>
+            <a href="#uoc-mo">Ước Mơ</a>
+        </div>
+        <h1>Hồ Sơ Cá Nhân 003</h1>
+        <audio autoplay loop>
+            <source src="nhac1.mp3" type="audio/mp3">
+        </audio>
+         <div class="container">
+            <div class="card" id="ten">
+                <h2>Tên</h2>
+		<p> Huỳnh Trường Giang
+                <p>Ngày sinh: 05/09/2007</p>
+                <p>Giới tính: Nam</p>
+                <p>Lớp: 12C5B</p>
+                <img src="imagines/giang-lun-vcl.jpg" alt="Ảnh cá nhân">
+            </div>
+            <div class="card" id="so-thich">
+                <h2>Sở thích</h2>
+                <p>-Đọc sách</p>
+		<p>-Nghe Nhạc</p>
+		<p>-Cờ vua</p>
+		<p>-Game (chỉ xem)</p>
+                <img src="imagines/maxresdefault.jpg" alt="Sở thích">
+            </div>
+            <div class="card" id="mon-hoc">
+                <h2>Môn học yêu thích</h2>
+		<p>-Toán Học-Hình học không gian vô hạn, xác xuất thống kê tuyệt đối</p>
+                <p>-Hóa Học-Hữu cơ, vô cơ</p>
+		<p>-Sinh Học-Thuyết tiến hóa<p>
+                <img src="imagines/bang-toan.jpg" alt="Môn học yêu thích">
+            </div>
+            <div class="card" id="uoc-mo">
+                <h2>Ước mơ</h2>
+                <p>-Trở thành 1 người có ích cho xã hội.</p>
+		<p>-Đỗ đại học vào được trường mình muốn.</p>
+		<p>-Cưới được vợ hiền, con xinh, nuôi con cái thành người.</p>
+		<p>-Phụng dưỡng bố mẹ, đền ơn đáp nghĩa.</P>
+		<p>-Sống một cuộc đời như bao người, tận hưởng cuộc sống này 1 cách dài nhất có thể.</p>
+                <img src="imagines/gia-dinh.jpg" alt="Ước mơ">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Số điện thoại: 0123-456-789 | 
+        <a href="https://www.facebook.com/huynh.giang.802226" target="_blank">Facebook</a>
+    </div>
+</body>
+</html>
